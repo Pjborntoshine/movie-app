@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* index.css */
+
+/* Common styles for movie card */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-color: #222; /* Dark background color for the whole page */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.movie-card {
+  display: flex;
+  width: 80%;
+  border: 1px solid #333; /* Darker border */
+  background-color: #111; /* Dark background for the card */
+  padding: 20px;
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Elevated card effect */
+}
+
+.left img {
+  max-width: 150px; /* Set the maximum width for the poster image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Rounded corners for the image */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Stronger shadow for the image */
+}
+
+.right {
+  padding-left: 20px;
+}
+
+.tital {
+  font-size: 28px; /* Larger font size for the title */
+  font-weight: bold;
+  color: #ff9800; /* Orange text color for the title */
+  margin-bottom: 10px;
+}
+
+.plot {
+  font-size: 18px; /* Larger font size for the plot */
+  color: #ccc; /* Lighter text color for the plot */
+  margin-bottom: 15px; /* More spacing below the plot */
+}
+
+.price {
+  font-size: 24px; /* Larger font size for the price */
+  color: #ff5722; /* Red-Orange color for price */
+  margin-top: 15px; /* More spacing above the price */
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.rating {
+  font-size: 20px; /* Larger font size for the rating */
+  font-weight: bold;
+  margin-right: 10px; /* Slightly more spacing between rating and stars */
+  color: #ff9800; /* Orange color for rating */
+}
+
+.stars {
+  font-size: 20px; /* Larger font size for stars */
+  display: flex;
+  align-items: center;
+}
+
+.star img {
+  width: 24px; /* Slightly larger star icons */
+  height: 24px;
+  margin-right: 5px; /* Spacing between stars */
+}
+
+.favorite-btn {
+  padding: 12px 24px; /* Slightly larger buttons */
+  margin-left: 15px; /* More spacing between buttons */
+  border: none;
+  background-color: #ff5722; /* Red-Orange color for buttons */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Rounded corners for the buttons */
+}
+
+.favorite-btn1:hover {
+  background-color: #f44336; /* Darker red-orange on hover */
+}
+.favorite-btn:hover {
+  background-color: #f44336; /* Darker red-orange on hover */
+}
+/* Add this CSS to style the "minus" class */
+.minus {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; /* Adjust the height as needed */
+  margin-right: 5px; /* Spacing to the right of the image */
+  filter: invert(40%) sepia(85%) saturate(2984%) hue-rotate(179deg) brightness(96%) contrast(95%); /* Example filter for image effect */
+}
+
+.Cart-btn {
+  padding: 12px 24px; /* Slightly larger buttons */
+  margin-left: 15px; /* More spacing between buttons */
+  border: none;
+  background-color: #4423a6; /* Red-Orange color for buttons */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Rounded corners for the buttons */
+}
+.Cart-btn:hover {
+  background-color: #2e80cc; /* Darker red-orange on hover */
+}
+.favorite-btn1 {
+  padding: 12px 24px; /* Slightly larger buttons */
+  margin-left: 15px; /* More spacing between buttons */
+  border: none;
+  background-color: #ff5722; /* Red-Orange color for buttons */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px; /* Rounded corners for the buttons */
 }
