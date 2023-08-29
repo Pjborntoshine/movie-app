@@ -1,12 +1,11 @@
-import {Component} from "react";
+
 //import myImage from './avenger.jpg'
 import "./index.css";
 
-class MovieCard extends Component{
+function MovieCard(props){
    
-render(){
-  const {movies,addStar,removStar,AddFev,AddCart}=this.props;
-   const {title,plot,price,Rating,star,fav,cart,poster,}=this.props.movies
+  const {movies,addStar,removStar,AddFev,AddCart}=props;
+   const {title,plot,price,Rating,star,fav,cart,poster,}=props.movies
    return (
    
    <div className="main">
@@ -44,7 +43,7 @@ render(){
    </div>
 
    )
-}
+
 
 }
 

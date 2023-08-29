@@ -1,0 +1,45 @@
+/* navbar.css */
+
+.container {
+    background: linear-gradient(#0f2330, #9e2dc0ee, #2980b9);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  /* Style for the cart count */
+  .count {
+    background-color: rgb(158, 59, 228);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+  }
+  
+    .name {
+      /* Use the CSS variable for color */
+       color: #403b69;
+      font-size: 18px;
+      font-weight: bold;
+      /* Add other static styles here */
+    }
+  
+  
+  
+  
+  
+  
+  
